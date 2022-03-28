@@ -65,3 +65,15 @@ ul {
         background-position: 0% 50%;
     }
 }
+
+@media (max-width: 1372px){
+    img {
+        display: none;
+    }
+    #workexp {
+        padding-left: 0px;
+    }
+    header {
+        padding-left: 0px;
+    }
+}
