@@ -1,0 +1,67 @@
+/*I like to put colors and repeating themes as variables in case i need to change entire themes*/
+:root {
+    --color-primary: #2c2c2c;
+    --color-secondary: #cccccc;
+    --box-shadow: 0 10px 20px rgba(38, 168, 185, 0.19), 0 6px 6px rgba(35, 131, 138, 0.23);
+}
+
+/*imported a popular google font*/
+body {
+    background-image: url("https://images.unsplash.com/photo-1586075010923-2dd4570fb338?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3387&q=80");
+    color: var(--color-primary);
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    margin: 10% 20%;
+}
+
+/*messing around with float for the first time*/
+#mugshot {
+    float: right;
+    width: 200px;
+    border-radius: 50%;
+    margin-right: 50px;
+    margin-bottom: -25px;
+    margin-top: 5px;
+    box-shadow: var(--box-shadow);
+}
+
+header {
+    text-transform: uppercase;
+    padding-left: 250px;
+    background: linear-gradient(-45deg, #4fc4be, #4b8385, #5c5c5c, #4fc4be);
+    background-size: 500% 100%;
+    animation: gradient 10s ease infinite;
+}
+
+article {
+    box-shadow: var(--box-shadow);
+    background-color: var(--color-secondary);
+}
+
+ul {
+    display: inline-block;
+    text-align: left;
+    margin-top: -5px;
+}
+
+/*first time using float, needed to move text back inline, img 200px + 50px margin = 250px*/
+#workexp {
+    padding-left: 250px;
+}
+
+.sect-header {
+    text-transform: uppercase;
+}
+
+/*messing with animating a gradient, tried to go with a prime color scheme I apologize if it offends the eyes*/
+@keyframes gradient {
+    0% { 
+        background-position: 0% 50%;
+    }
+    50% { 
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
